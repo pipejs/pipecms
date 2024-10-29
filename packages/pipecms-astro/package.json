@@ -1,0 +1,43 @@
+{
+	"name": "@pipecms/astro",
+	"version": "0.0.0",
+	"description": "A lightweight CMS for Astro",
+	"type": "module",
+	"author": {
+		"email": "contact@pipejs.dev",
+		"name": "pipejs",
+		"url": "https://github.com/pipejs/pipecms"
+	},
+	"license": "MIT",
+	"keywords": [
+		"astro-integration",
+		"astro-component",
+		"withastro",
+		"astro",
+		"pipecms"
+	],
+	"publishConfig": {
+		"access": "public"
+	},
+	"sideEffects": false,
+	"files": ["dist"],
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"default": "./dist/index.js"
+		}
+	},
+	"scripts": {
+		"dev": "tsup --watch",
+		"build": "tsup"
+	},
+	"peerDependencies": {
+		"astro": "^4.16.7"
+	},
+	"dependencies": {
+		"astro-integration-kit": "^0.16.1"
+	},
+	"devDependencies": {
+		"tsup": "^8.3.5"
+	}
+}
